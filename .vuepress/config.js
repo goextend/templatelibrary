@@ -17,6 +17,7 @@ function getPosts() {
 			collapsible:false,
 			children:
 			[
+			"/examples/amazons3",
 			"/examples/clearbit",
 			"/examples/sendgrid",
 			"/examples/twitter"

@@ -1,17 +1,17 @@
 ---
 {
-	"title":"SendGrid",
+	"title":"Amazon S3",
 	"args":[
 		{"sg_key":"1111"},
 		{"sg_token":"2222"}
 	],
-	"published":"5/9/2018"
+	"published":"6/18/2018"
 }
 ---
 
-# SendGrid
+# Amazon S3
 
-## What is SendGrid?
+## What is Amazon S3?
 
 [SendGrid](https://sendgrid.com/) is an "all in one" email service, handling basic mail delivery as well as newsletter subscriptions. Their API allows you to easily send and receive mail over various delivery systems.
 

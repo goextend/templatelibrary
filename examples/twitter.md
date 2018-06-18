@@ -13,7 +13,7 @@
 
 ## What is Twitter?
 
-SendGrid is an email service. Blah blah blah.
+Twitter is a social network where interactions are limited to 244 characters. Twitter has a strong [developer ecosystem](https://developer.twitter.com/) supporting multiple different levels of API integrations. This includes creating tweets, reading tweets, and generic searches across the platform.
 
 ## Prereqs
 
