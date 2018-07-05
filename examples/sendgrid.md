@@ -1,7 +1,7 @@
 ---
 {
 	"title":"SendGrid",
-	"args":[
+	"secrets":[
 		{"sg_key":"1111"},
 		{"sg_token":"2222"}
 	],

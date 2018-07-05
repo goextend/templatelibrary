@@ -1,9 +1,10 @@
 ---
 {
 	"title":"ClearBit",
-	"args":[
+	"secrets":
 		{"cb_key":"1111"}
-	],
+	,
+  "npm":["clearbit"],
 	"published":"5/4/2018"
 }
 ---
@@ -29,26 +30,7 @@ The sample code requires the following dependencies:
 
 The sample below shows using the ClearBit Enrichment API to find details about a new lead's email address. The API returns a `person` and `company` object, both of which will be added to the lead and returned.
 
-```js
-/**
-* @param context {WebtaskContext}
-*/
-module.exports = function(context, cb) {
-  let lead = context.body;
-  let clearbit = require('clearbit')(context.secrets.clearbit_key);
-  
-  clearbit.Enrichment.find({email: lead.email, stream: true})
-  .then(function (response) {
-    lead.clearbit = { person:response.person, company:response.company };
-    cb(null, { lead });
-
-  })
-  .catch(function (err) {
-    console.error(err);
-  });
-  
-};
-```
+<<< @/.vuepress/samples/clearbit.js
 
 ## Sample Output
 

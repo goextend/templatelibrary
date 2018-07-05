@@ -1,7 +1,7 @@
 ---
 {
 	"title":"Twitter",
-	"args":[
+	"secrets":[
 		{"sg_key":"1111"},
 		{"sg_token":"2222"}
 	],
@@ -17,7 +17,12 @@ Twitter is a social network where interactions are limited to 244 characters. Tw
 
 ## Prereqs
 
-You need a trial account at X, and then a key Y.
+To work with the Twitter API, sign in at [https://apps.twitter.com](https://apps.twitter.com). Create a new application (or use an existing one) and make note of the `consumer_key` and `consumer_secret`. Documentation about Twitter's API and policies may be found on their [developer site](https://developer.twitter.com). 
+
+The sample code requires the following dependencies:
+
+* npm module(s): twitter, request
+* secrets: consumer_key, consumer_secret
 
 ## Code Sample
 
