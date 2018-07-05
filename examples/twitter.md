@@ -26,29 +26,6 @@ The sample code requires the following dependencies:
 
 ## Code Sample
 
-The sample below demonstrates doing X when Y happens. It will then do Z and that is cool.
+In the following example, a Twitter search is performed for a keyword and if any results are found, the code returns a reconstructed result set. (Reconstructed in that that results are trimmed significantly.)
 
-```js
-'use strict';
-
-const helper = require('sendgrid').mail;
-console.log('helper?', JSON.stringify(helper));
-const RECIPS = ["raymondcamden@gmail.com","ray@camdenfamily.com"];
-
-module.exports = function(context, req, res) {
-	//first, gather the form fields
-	let form = context.body;
-
-	let from = RECIPS[0];
-	let to = RECIPS[0];
-
-	//let the form specify a from
-	if(form._from) {
-		from = form["_from"];
-	}
-
-}
-
-function sendEmail(to, from, subject, body, key, cb) {
-}
-```
+<<< @/.vuepress/samples/twitter.js
